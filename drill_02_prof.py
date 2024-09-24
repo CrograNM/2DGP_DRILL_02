@@ -54,7 +54,7 @@ def run_circle():
     print('Circle')
     r, cx, cy = 300, 800//2, 600//2
 
-    for d in range(0, 360):     # d = degree
+    for d in range(-90, 270):     # d = degree
         x = r * math.cos(math.radians(d)) + cx  
         y = r * math.sin(math.radians(d)) + cy
         draw_boy(x, y) 
