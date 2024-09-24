@@ -6,12 +6,16 @@ open_canvas()
 grass = load_image('grass.png')
 character = load_image('character.png')
 def run_top():
+    print('top')
     pass
 def run_right():
+    print('right')
     pass
 def run_bottom():
+    print('bottom')
     pass
 def run_left():
+    print('left')
     pass
 def run_rectangle():
     print('rectangle')
@@ -35,7 +39,7 @@ def run_circle():
     pass
 
 while(1) :
-    run_circle()
+    # run_circle()
     run_rectangle()
     break
     # **TOP-DOWN-DESIGN : 큰 틀을 잡고 내부를 채우는 하향식 설계 방식**
