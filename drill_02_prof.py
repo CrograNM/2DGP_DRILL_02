@@ -5,8 +5,20 @@ import math
 open_canvas()
 grass = load_image('grass.png')
 character = load_image('character.png')
+def run_top():
+    pass
+def run_right():
+    pass
+def run_bottom():
+    pass
+def run_left():
+    pass
 def run_rectangle():
     print('rectangle')
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
     pass # pass : 유보기능 - C로 따지면 아무것도 없는 빈 함수
 def run_circle():
     print('Circle')
