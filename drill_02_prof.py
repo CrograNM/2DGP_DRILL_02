@@ -5,8 +5,14 @@ import math
 open_canvas()
 grass = load_image('grass.png')
 character = load_image('character.png')
+def draw_boy(x, y):
+    clear_canvas_now()
+    character.draw_now(x, y)
+    delay(0.01)
 def run_top():
     print('top')
+    for x in range(0, 800, 10):
+        draw_boy(x, 550)
     pass
 def run_right():
     print('right')
@@ -31,15 +37,11 @@ def run_circle():
     for d in range(0, 360):     # d = degree
         x = r * math.cos(math.radians(d)) + cx  
         y = r * math.sin(math.radians(d)) + cy
-    
-        clear_canvas_now()
-        #grass.draw_now(400, 30)
-        character.draw_now(x, y)
-        delay(0.01)
+        draw_boy(x, y) 
     pass
 
 while(1) :
-    # run_circle()
+    run_circle()
     run_rectangle()
     break
     # **TOP-DOWN-DESIGN : 큰 틀을 잡고 내부를 채우는 하향식 설계 방식**
