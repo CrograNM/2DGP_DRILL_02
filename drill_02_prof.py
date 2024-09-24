@@ -61,7 +61,7 @@ def run_circle():
     pass
 
 while(1) :
-    # run_circle()
+    run_circle()
     run_rectangle()
     break
     # **TOP-DOWN-DESIGN : 큰 틀을 잡고 내부를 채우는 하향식 설계 방식**
