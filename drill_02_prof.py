@@ -8,26 +8,32 @@ character = load_image('character.png')
 def draw_boy(x, y):
     clear_canvas_now()
     character.draw_now(x, y)
-    delay(0.01)
+    delay(0.1)
 def run_top():
     print('top')
-    for x in range(0, 800, 10):
+    for x in range(800, 0, -10):
         draw_boy(x, 550)
     pass
 def run_right():
     print('right')
+    for y in range(0, 600, 10):
+        draw_boy(750, y)
     pass
 def run_bottom():
     print('bottom')
+    for x in range(0, 800, 10):
+        draw_boy(x, 50)
     pass
 def run_left():
     print('left')
+    for y in range(600, 0, -10):
+        draw_boy(50, y)
     pass
 def run_rectangle():
     print('rectangle')
-    run_top()
-    run_right()
     run_bottom()
+    run_right()
+    run_top()
     run_left()
     pass # pass : 유보기능 - C로 따지면 아무것도 없는 빈 함수
 def run_circle():
